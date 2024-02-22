@@ -23,6 +23,8 @@ class Sapin{
             System.out.println("*");
         }
 
+        //affichage de la racine 
+        //centrer la racine dans le cas où la taille de racine est impaire
         if (taille_racine%2 == 0) {
             for(int h=1;h<=n-taille_racine/2;h++){
                 System.out.print(' ');
@@ -31,13 +33,15 @@ class Sapin{
                 System.out.print("*");
             }
         }else{
+            //centrer les racines dans le cas où la taille de racine est impaire
             for(int h=1;h<=n-1-taille_racine/2;h++){
                 System.out.print(' ');
             }
+            //desinner les racines dans le cas où la taille de racine est impaire
             for(int t=1; t<=taille_racine;t++){
                 System.out.print("*");
             }
         }
-        System.err.println();
+        System.out.println();
     }
 }
